@@ -16,3 +16,16 @@ I wrote this to solve a very local problem, with Ghost and Listmonk running on t
 3. When a new Ghost post is published, a new Listmonk campaign with the same details is created and scheduled for publication
 
 Ghost offers some more webhook options, and it should be easy to expand the bridge if I (or you) ever need them.
+
+## Ghost
+- Add a custom integration
+- Add required webhooks
+- Supply flask server address, e.g. http://127.0.0.1:5000
+- Make up a secret to use for authentication
+- Fill out `secret` variable in `app.py`
+
+## Listmonk
+- Create new API user
+- Create a list for your Ghost blog, and fill out the list number (top left corner) in `app.py`
+- Fill out user name and access token in `app.py`
+  
