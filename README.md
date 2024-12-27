@@ -17,15 +17,18 @@ I wrote this to solve a very local problem, with Ghost and Listmonk running on t
 
 Ghost offers some more webhook options, and it should be easy to expand the bridge if I (or you) ever need them.
 
-## Ghost
-- Add a custom integration
-- Add required webhooks
-- Supply flask server address, e.g. http://127.0.0.1:5000
-- Make up a secret to use for authentication
-- Fill out `secret` variable in `app.py`
+## Ghost Settings panel
+1. Add a custom integration
+2. Then, add required webhooks to the integration
+3. Supply flask server address, e.g. http://127.0.0.1:5000 (if Ghost runs in the same local setup)
+4. Make up a secret to use for authentication
+5. Flask app: Fill out `secret` variable in `app.py`
 
-## Listmonk
-- Create new API user
-- Create a list for your Ghost blog, and fill out the list number (top left corner) in `app.py`
-- Fill out user name and access token in `app.py`
+## Listmonk admin panel
+1. Create new API user
+2. Flask app: Fill out user name and access token in `app.py`
+3. Create a list for your Ghost blog
+4. Flask app: Fill out the list number (top left corner) in `app.py`
+
+Run flask app and the bridge should be live. 
   
