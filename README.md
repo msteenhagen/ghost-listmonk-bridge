@@ -20,7 +20,7 @@ Ghost offers some more webhook options, and it should be easy to expand the brid
 ## Ghost Settings panel
 1. Add a custom integration
 2. Then, add required webhooks to the integration
-3. Supply flask server address, e.g. http://127.0.0.1:5000 (if Ghost runs in the same local setup)
+3. Supply flask server address, e.g. http://127.0.0.1:5000/webhook (if Ghost runs in the same local setup)
 4. Make up a secret to use for authentication
 5. Flask app: Fill out `secret` variable in `app.py`
 
