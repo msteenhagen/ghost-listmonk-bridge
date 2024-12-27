@@ -11,12 +11,12 @@ import hmac
 secret = 'abcdefghijAbCdEfGhIjAbABCDEFGHIJ'
 
 # Listmonk api details:
-base_url = "https://example.com"
-access_token = 'token api_user_name:ABCDEFGHIJabcdefghijAbCdEfGhIjAb'
-request_headers = {"Authorization": access_token}
+base_url = "https://example.com" # Listmonk application url, used for API requests
+access_token = 'token api_user_name:ABCDEFGHIJabcdefghijAbCdEfGhIjAb' # Listmonk access token, create Listmonk API user for this with <api_user_name>, and associated token
+list_no = 1 # Listmonk list information (to which list should users and campaigns be added)
 
-# Listmonk list information (to which list should users and campaigns be added):
-list_no = 1
+# Prepares a header for API requests
+request_headers = {"Authorization": access_token} 
 
 # API post creates a new Listmonk subscriber
 def new_subscriber(request, request_headers):
