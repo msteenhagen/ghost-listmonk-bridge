@@ -53,7 +53,7 @@ def new_post(request, request_headers):
         "type":"regular",
         "tags":["test"],
         "template_id":1,
-        "send_at": str((datetime.now() + timedelta(minutes=30)).strftime("%Y-%m-%dT%H:%M:%SZ"))
+        "send_at": str((datetime.now() + timedelta(minutes=30)).strftime("%Y-%m-%dT%H:%M:%SZ")) # pick a convenient publication time
         }
     response = requests.post(url= base_url + "/api/campaigns", headers = request_headers, json=campaign)
     return response.json()['data']['id']
